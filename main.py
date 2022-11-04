@@ -1,4 +1,5 @@
 import speedtest
+import pprint
 
 def test():
     s = speedtest.Speedtest()
@@ -7,6 +8,7 @@ def test():
     s.download()
     s.upload()
     res = s.results.dict()
+    pprint.pprint(res)
     return res["download"], res["upload"], res["ping"]
 
 def main():
@@ -15,8 +17,6 @@ def main():
             print('Making test #{}'.format(i+1))
             d, u, p = test()
             f.write('Test #{}\n'.format(i+1))
-            f.write('Download: {:.2f} Kb/s\n'.format(d / 1024))
-            f.write('Upload: {:.2f} Kb/s\n'.format(u / 1024))
+            f.write('Download: {:.2f} Mb/s\n'.format(d / 1048576))
+            f.write('Upload: {:.2f} Mb/s\n'.format(u / 1048576))
             f.write('Ping: {}\n'.format(p))
-
-main()
