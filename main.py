@@ -18,3 +18,5 @@ def main():
             f.write('Download: {:.2f} Mb/s\n'.format(d / 1048576))
             f.write('Upload: {:.2f} Mb/s\n'.format(u / 1048576))
             f.write('Ping: {}\n'.format(p))
+
+main()

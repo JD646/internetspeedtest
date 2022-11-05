@@ -1,12 +1,12 @@
 Test #1
-Download: 15.11 Mb/s
-Upload: 31.72 Mb/s
-Ping: 25.661
+Download: 80.50 Mb/s
+Upload: 10.05 Mb/s
+Ping: 11.499
 Test #2
-Download: 10.93 Mb/s
-Upload: 42.47 Mb/s
-Ping: 7.306
+Download: 74.69 Mb/s
+Upload: 9.99 Mb/s
+Ping: 10.405
 Test #3
-Download: 17.97 Mb/s
-Upload: 30.34 Mb/s
-Ping: 11.995
+Download: 82.06 Mb/s
+Upload: 9.97 Mb/s
+Ping: 11.286
