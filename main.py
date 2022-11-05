@@ -1,5 +1,4 @@
 import speedtest
-import pprint
 
 def test():
     s = speedtest.Speedtest()
@@ -8,7 +7,6 @@ def test():
     s.download()
     s.upload()
     res = s.results.dict()
-    pprint.pprint(res)
     return res["download"], res["upload"], res["ping"]
 
 def main():
